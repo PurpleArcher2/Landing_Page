@@ -1,0 +1,160 @@
+@use "globals/index";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: var(--dark-blue);
+    padding: 2rem;
+}
+
+a, .container{
+    color: white;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8rem;
+
+    .logo{
+        display: flex;
+    }
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section{
+    padding: 0 12rem 5rem 12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro > h1{
+    font-size: 3rem;
+}
+
+.intro{
+    padding: 0 1.5rem;
+}
+
+.intro > p { 
+    margin-bottom: 1rem;
+}
+
+.intro_pic{
+    width: auto;
+}
+
+.intro > button{
+    background-color:var(--light-blue);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    &:hover{
+        background-color: white;
+        color: var(--light-blue);
+        transition: 200ms ease-in-out;
+    }
+}
+
+.container_2{
+    padding: 5rem;
+    text-align: center;
+
+    h1{
+        margin-bottom: 5rem;
+    }
+}
+
+.div_container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5rem;
+}
+
+.card{
+    padding: 0 2rem;
+    color: rgb(39, 39, 39);
+    transition: 300ms ease-in-out;
+    &:hover{
+        transition: 300ms ease-in-out;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.container_quote{
+    background: var(--low-grey);
+    padding: 10rem;
+    margin-bottom: 5rem;
+    & > p:first-child{
+        font-size: var(--font-size3);
+    }
+
+    & > p:nth-child(2){
+        font-size: var(--font-size1);
+        font-weight: bold;
+        text-align: right;
+    }
+}
+
+.container_signup{
+    background: var(--light-blue);
+    color: white;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+    font-size: 14px;
+    margin-bottom: 5rem;
+    .signup_text{
+        margin-right: 10rem;
+    }
+}
+
+.button > button{
+    background: transparent;
+    padding: 0.5rem 2rem;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    &:hover{
+        background: white;
+        color: var(--light-blue);
+        transition: 200ms ease-in-out;
+    }
+}
+
+footer{
+    background: var(--header-bg);
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
