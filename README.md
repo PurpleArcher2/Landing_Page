@@ -1,4 +1,4 @@
-# Landing_Page
+# landing_page
 
 ## Screenshots 
 ![image](https://user-images.githubusercontent.com/65300348/213260434-78b99092-6e43-4189-8d95-08eb41b4d4e9.png)
